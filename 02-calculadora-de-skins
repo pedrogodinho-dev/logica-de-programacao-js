@@ -1,0 +1,17 @@
+/**
+ * DESAFIO: Calculadora de Skins com Formatação de Moeda
+ * Conceitos: Funções, Variáveis Locais, Operadores e toLocaleString.
+ */
+
+function calcularPrecoSkin(precoBase){
+        let taxa = 5
+        let precoComTaxa = precoBase + taxa
+        let precoFormatado = precoComTaxa.toLocaleString('pt-BR',{
+            style: 'currency',
+            currency: 'BRL'
+        })
+
+        return precoComTaxa > 100 ? `Skin premium: ${precoFormatado}` : `Skin comum: ${precoFormatado} `
+    }
+    console.log(calcularPrecoSkin(124.99)) //Skin premium
+    console.log(calcularPrecoSkin(59.99)) //Skin comum

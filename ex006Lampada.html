@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="status">A lampada está <strong>APAGADA</strong></p>
+    <input type="button" value="Ligar" id="botaoLampada" onclick="interruptor()">
+    <script>
+        function interruptor(){
+            let textoStatus = document.querySelector('#status')
+            let oBotao = document.querySelector('#botaoLampada')
+
+            if(oBotao.value == "Ligar"){
+                textoStatus.innerHTML = "A lampada está ACESA!"
+                textoStatus.style.color = 'gold'
+                oBotao.value = 'Desligar'
+            }else{
+                textoStatus.innerHTML = 'A lampada está APAGADA!'
+                textoStatus.style.color = 'black'
+                oBotao.value = 'Ligar'
+            }
+        }
+    </script>
+</body>
+</html>

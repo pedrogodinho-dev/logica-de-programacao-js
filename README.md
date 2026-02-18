@@ -10,5 +10,9 @@ Este repositório contém uma série de exercícios e desafios práticos que des
 - **Funções:** Criação de rotinas reutilizáveis com parâmetros e retornos.
 - **Formatação de Dados:** Uso do método `toLocaleString` para manipulação de moedas (BRL).
 - **Tratamento de Tipos:** Conversão de Strings para Numbers.
+- **Manipulação do DOM (Document Object Model)
+- **Tratamento e Sanitização de Dados
+- **Lógica de Interface e Eventos
+- **Expressões Regulares (Regex) Básicas
 
 ## 🛠️ Desafios em Destaque

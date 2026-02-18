@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senha Secreta</title>
+</head>
+<body>
+    Digite a senha: <input type="password" name="senha" id="senha">
+    <input type="button" value="Entrar" onclick="entrar ()">
+
+    <div id="res"></div>
+    <script>
+        const campoSenha = document.querySelector('input#senha')
+        const areaResultado = document.querySelector('#res')
+
+        const SENHA_MESTRE = "banana123"
+
+        function entrar(){
+            const entradaUsuario = campoSenha.value
+            const senhaTratada = entradaUsuario.toLowerCase().trim()
+
+        if(senhaTratada === SENHA_MESTRE){
+            
+            areaResultado.innerHTML = `<p style='color: green'>"Você logou na sua conta!"</p>`
+        }else {
+
+            areaResultado.innerHTML = `<p style="color: red;">Senha incorreta, tente novamente!</p>`;
+    }
+    }
+
+
+        </script>
+</body>
+</html>

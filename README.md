@@ -12,12 +12,3 @@ Este repositório contém uma série de exercícios e desafios práticos que des
 - **Tratamento de Tipos:** Conversão de Strings para Numbers.
 
 ## 🛠️ Desafios em Destaque
-
-### 🛡️ Guardião do Portal
-Uma função que valida múltiplos critérios (Nível e Conexão) para autorizar o acesso a partidas ranqueadas. Retorna um valor booleano para controle de fluxo.
-
-### 💰 Calculadora de Skin com Taxa
-Sistema que calcula o preço final de um item de jogo, aplicando taxas fixas e formatando o resultado final como moeda brasileira.
-
----
-Projetos desenvolvidos durante mentoria prática de lógica de programação.

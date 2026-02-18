@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Digite seu nome completo: <input type="text" name="nome" id="nome">
+    <input type="button" value="Analisar" onclick="Testar ()">
+
+    <div id="res"></div>
+
+    <script>
+        function Testar(){
+            let txtNome = document.querySelector('input#nome')
+            let resultado = document.querySelector("div#res")
+
+            // 2. Pegamos o valor, limpamos e transformamos
+            let nomeOriginal = txtNome.value
+            let nomeLimpo = nomeOriginal.trim()
+            let nomeMaiusculo = nomeLimpo.toUpperCase()
+
+            // 3. Contamos as letras (Removendo espaços do meio para ser preciso)
+            // O replace(/\s+/g, '') remove TODOS os espaços internos
+            let totalLetras = nomeLimpo.replace(/\s+/g,'').length
+
+            // 4. Validação simples: se o nome estiver vazio, avise!
+            if (nomeLimpo === ''){
+                resultado.innerHTML=`<p style='color:red'>Por favor, digite um nome!</p>`
+            }
+            // 5. Exibimos os resultados na DIV
+            else{
+                resultado.innerHTML = `
+                <hr>
+                <p>Nome formatado: <strong>${nomeLimpo}</strong> </p>
+                <p>Nome em maiusculo: <strong> ${nomeMaiusculo}</strong> </p>
+                <p>Total de letras (sem espaço): <strong>${totalLetras}</strong><p>`
+
+            }
+        }
+    </script>
+    
+</body>
+</html>
